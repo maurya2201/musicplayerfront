@@ -16,7 +16,7 @@ const getOne=async()=>{
   <img alt="img" loading="lazy" src="${image}" height="300px" width="500px">
   <div class="control">
   <button id="prev" class="btns" onclick="prev(${id})">⏮️</button>
-  <audio src="${link}" controls autoplay></audio>
+  <audio src="${link}" controls autoplay download=""></audio>
   <button class="btns" onclick="next(${id})">⏭️</button>
   </div>
   </div>
