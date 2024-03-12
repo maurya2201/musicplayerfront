@@ -15,7 +15,7 @@ const getOne=async()=>{
   <pre><h1>${title.toUpperCase()}</h1></pre>
   <img alt="img" loading="lazy" src="${image}" height="300px" width="500px">
   <div class="control">
-  <button class="btns" onclick="prev(${id})">⏮️</button>
+  <button id="prev" class="btns" onclick="prev(${id})">⏮️</button>
   <audio src="${link}" controls autoplay></audio>
   <button class="btns" onclick="next(${id})">⏭️</button>
   </div>
@@ -47,7 +47,7 @@ async function prev(id){
   <pre><h1>${title.toUpperCase()}</h1></pre>
   <img alt="img" loading="lazy" src="${image}" height="300px" width="500px">
   <div class="control">
-  <button class="btns" onclick="prev(${id})">⏮️</button>
+  <button id="prev" class="btns" onclick="prev(${id})">⏮️</button>
   <audio src="${link}" controls autoplay></audio>
   <button class="btns" onclick="next(${id})">⏭️</button>
   </div>
@@ -72,7 +72,7 @@ async function next(ids){
     <pre><h1>${title.toUpperCase()}</h1></pre>
     <img alt="img" loading="lazy" src="${image}" height="300px" width="500px">
     <div class="control">
-    <button class="btns" onclick="prev(${id})">⏮️</button>
+    <button id="prev" class="btns" onclick="prev(${id})">⏮️</button>
     <audio src="${link}" controls autoplay></audio>
     <button class="btns" onclick="next(${id})">⏭️</button>
     </div>
@@ -89,7 +89,7 @@ async function next(ids){
   <pre><h1>${title.toUpperCase()}</h1></pre>
   <img alt="img" loading="lazy" src="${image}" height="300px" width="500px">
   <div class="control">
-  <button class="btns" onclick="prev(${id})">⏮️</button>
+  <button id="prev" class="btns" onclick="prev(${id})">⏮️</button>
   <audio src="${link}" controls autoplay></audio>
   <button class="btns" onclick="next(${id})">⏭️</button>
   </div>
