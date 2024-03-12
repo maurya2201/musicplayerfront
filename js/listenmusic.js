@@ -8,7 +8,7 @@ for(const param of urlParams){
 const[[key,value]]=data;
 const getOne=async()=>{
   try{
-  const response = await axios.get(`http://localhost:4000/api/music/${value}`);
+  const response = await axios.get(`https://musicplayerback.onrender.com/api/music/${value}`);
   const {title,image,link,id} = response.data;
   let musicPlayer =`
   <div class="child">
@@ -38,7 +38,7 @@ async function prev(id){
   document.getElementById("prev").style.cursor="pointer";
   document.getElementById("prev").style.backgroundColor="black";
   document.getElementById("prev").style.opacity="1";
-  const response = await axios.get(`http://localhost:4000/api/music`);
+  const response = await axios.get(`https://musicplayerback.onrender.com/api/music`);
   const filter = response.data.filter((element)=>element.id===prev);
   let listing =``;
   filter.map(({title,image,link,id})=>
@@ -59,13 +59,13 @@ async function prev(id){
 }
 async function next(ids){
   let next = ids+1;
-  const response = await axios.get(`http://localhost:4000/api/music`);
+  const response = await axios.get(`https://musicplayerback.onrender.com/api/music`);
   let max; 
   for(let i=0;i<response.data.length;i++){
     max = Math.max(response.data[i].id);
   }
   if(next>max){
-    const response = await axios.get(`http://localhost:4000/api/music/65f033e4f777594c54bad5f5`);
+    const response = await axios.get(`https://musicplayerback.onrender.com/api/music/65f033e4f777594c54bad5f5`);
     const {title,image,link,id} = response.data;
     let musicPlayer =`
     <div class="child">
