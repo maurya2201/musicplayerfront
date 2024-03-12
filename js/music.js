@@ -1,6 +1,6 @@
 const getMusic=async()=>{
   try{
-  const response = await fetch(`http://localhost:4000/api/music/`);
+  const response = await fetch(`https://musicplayerback.onrender.com/api/music/`);
   const musics = await response.json();
   let music =``;
   musics.map(({title,image,_id})=>
